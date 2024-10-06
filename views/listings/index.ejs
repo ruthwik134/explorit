@@ -1,0 +1,36 @@
+<%-layout("/loyouts/boilerplate")%>
+
+    <body>
+        <h2>listings</h2>
+
+        <!--<form method="get" action="/listings/new">
+        <button>create a new listings</button>
+    </form>-->
+        <div class="row rows-cols-lg-3 row-cols-md-3 row-cols-sm-1">
+
+            <%for(let i of model1){%>
+                <a href="/listings/shows/<%=i._id%>" class="listing-link">
+                    <div class="card" style="width: 20rem;">
+                        <img src="<%=i.image.url%>" class="card-img-top" alt="listingsimage" style="height:20rem">
+                        <div class="card-body">
+                            <p class="card-text">
+                                <b>
+                                    <%=i.title%>
+                                </b><br>
+                                &#8377;<%=i.price.toLocaleString("en-IN")%>/night<br>
+
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <%}%>
+        </div>
+
+        <!--<for(let i of model1){%>
+            <p><a href="/shows/<=i._id%>">
+                    <=i.title%>
+                </a></p>
+            <}%>-->
+
+
+    </body>

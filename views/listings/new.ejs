@@ -1,0 +1,47 @@
+<%-layout("/loyouts/boilerplate")%>
+    <h2>create new listing</h2>
+    <div class="row">
+        <div class="col-8 offset-2">
+
+            <body>
+                <form method="post" action="/listings/show2" class="needs-validation" novalidate enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label for="title" class="form-label">enter title</label>
+                        <input name="hi2[title]" placeholder="enter title" type="text" class="form-control" required>
+                        <div class="invalid-feedback">please enter a valid one</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="description" class="form-label">description</label>
+                        <textarea name="hi2[description]" rows="5" cols="5" type="text" class="form-control" required></textarea>
+                        <div class="invalid-feedback">please enter a valid description</div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="image" class="form-label">upload listingimage</label>
+                        <input name="hi2[image]"  type="file" class="form-control" >
+                    </div>
+                    <div class="row">
+                        <div class="mb-3 col-md-4">
+                            <label for="price" class="form-label"></label>
+                            <input name="hi2[price]" placeholder="enter price"  class="form-control" type="number" required>
+                            <div class="invalid-feedback">please enter valid price</div>
+                        </div>
+                        <div class="mb-3 col-md-8">
+                            <label for="location" class="form-label"></label>
+                            <input name="hi2[location]" placeholder="enter location" type="text" class="form-control" required>
+                            <div class="invalid-feedback">enter valid one</div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="country" class="form-label"></label>
+                        <input name="hi2[country]" placeholder="enter the country" type="text" class="form-control"/>
+                        <div class="invalid-feedback"> enter valid one</div>
+                    </div>
+                    <button class="btn add-btn ">Add</button>
+
+
+                </form>
+
+            </body>
+        </div>
+    </div>
