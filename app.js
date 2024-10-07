@@ -25,6 +25,8 @@ const Localstrategy=require("passport-local");
 const user=require("./classroom/routes/user.js");
 const User=require("./models/user.js");
 const userRouter=require("./routing/user.js");
+const listingcontroller=require("./controllers/listings.js");
+
 app.use(methodOverride("_method"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -71,7 +73,7 @@ passport.deserializeUser(User.deserializeUser());
     //res.locals.success=req.flash("success");
     //next();
 //})
-
+app.get("/",wrapAsync(listingcontroller.index) );
 app.get("/hi",(req,res)=>{
     res.redirect("/listings");
 })
@@ -217,8 +219,7 @@ app.use("/",userRouter);
     
     
     //let { id } = req.params;
-    //console.log(req.body.hi2);
-
+    //console.log(req.body
     //console.log(id);
     //await listing.findByIdAndUpdate(id, { ...req.body.hi2 });
     //console.log("hi");
