@@ -21,13 +21,13 @@ This project is a full-stack tourism platform that helps users explore, review, 
 1. Clone the repository:
    ```bash
 
-   git clone https://github.com/genzverse-24/1216-conquer.git
+   git clone https://github.com/ruthwik134/explorit.git
 
    ```
 2. Navigate to the project directory:
    ```bash
 
-   cd 1216-conquer
+   cd explorit
 
    ```
 3. Install the required dependencies:
@@ -36,18 +36,37 @@ This project is a full-stack tourism platform that helps users explore, review, 
    npm install
 
    ```
-4. Start the application:
+
+4. Set Up your environment variables:
+ ```bash
+
+   MONGODB_URI=mongodb+srv://sairuthwikmaheshwaram:GTyy27UbZCh7QULa@cluster0.dpso7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+   SESSION_SECRET=SECRET=dddddeddfdvcdwqfeqw
+
+
+   ```
+5. Start the application:
    ```bash
 
    npm run dev
 
    ```
-5. Run the Backend:
+6. Run the Backend:
    ```bash
 
    cd Backend
    nodemon server.js
 
    ```
+🛠️ Usage
+Sign Up / Log In: Create an account or log in to access full features.
+Browse Listings: Explore tourist attractions with detailed information.
+Add a Listing: Authenticated users can add new tourist attractions.
+Write Reviews: Leave ratings and comments on listings.
+Search & Filter: Use the search functionality to find specific attractions.
+
+👥 Author:
+SaiRuthwik Maheshwaram
+
 
 
